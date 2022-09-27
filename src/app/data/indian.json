@@ -1,0 +1,52 @@
+[
+    {
+        "pid":1,
+        "pname":"Maruti Suzuki",
+        "pmodel":"XL6 Zeta",
+        "pmilage":"20.97km/l",
+        "pcolor":"Red, Blue, Black",
+        "price":12.83,
+        "img":"https://ackodrive-assets.s3.amazonaws.com/media/test_mIvytuW.png",
+        "pstatus":"Active"
+    },
+
+    
+
+    {
+        "pid":2,
+        "pname":"Kia",
+        "pmodel":"Seltos 1.5 HTE",
+        "pmilage":"16.5km/l",
+        "pcolor":"Blue, Black, white",
+        "price":11.85,
+        "img":"https://ackodrive-assets.s3.amazonaws.com/media/test_Jo9HxF8.png",
+        "pstatus":"Active"
+    },  
+
+    {
+        "pid":3,
+        "pname":"Hyundai",
+        "pmodel":"Bs 6",
+        "pmilage":"20.97km/l",
+        "pcolor":"Red, Blue, Black",
+        "price":16.83,
+        "img":"https://ackodrive-assets.s3.amazonaws.com/media/test_MVWZ7fr.jpeg",
+        "dstatus":"Inactive"
+        
+    },
+
+    {
+        "pid":4,
+        "pname":"Honda",
+        "pmodel":"City 1.5 V Petrol",
+        "pmilage":"14.97km/l",
+        "pcolor":"Red, Blue, Golden Brown Metallic",
+        "price":18.83,
+        "img":"https://ackodrive-assets.s3.amazonaws.com/media/test_flJEwgj.png",
+        "cstatus":"Out of stock"
+
+    }
+    
+    
+
+]

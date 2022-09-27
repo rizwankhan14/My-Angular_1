@@ -1,0 +1,114 @@
+<!--Property Binding-->
+<form [formGroup]="myForm" novalidate>
+  <div class="form-group">
+      <label>First Name</label>
+      <input type="text" class="form-control" placeholder="Enter firstname" formControlName="firstname"
+          [ngClass]="{'is-invalid':firstname.errors && (firstname.touched||firstname.dirty),'is-valid':firstname.valid}">
+     
+      <span class="invalid-feedback">
+          <strong *ngIf="firstname.errors?.required">Name is Required</strong>
+          <strong *ngIf="firstname.errors?.pattern">Only Alphabets allowed(A-Z and a-z)</strong>
+          <strong *ngIf="firstname.errors?.minlength">Min length is 4 characters</strong>
+          <strong *ngIf="firstname.errors?.maxlength">Max length is 16 characters</strong>
+      </span>
+  </div>
+
+  <div class="form-group">
+    <label>Last Name</label>
+    <input type="text" class="form-control" placeholder="Enter lastname" formControlName="lastname"
+        [ngClass]="{'is-invalid':lastname.errors && (lastname.touched||lastname.dirty),'is-valid':lastname.valid}">
+    
+    <span class="invalid-feedback">
+        <strong *ngIf="lastname.errors?.required">Name is Required</strong>
+        <strong *ngIf="lastname.errors?.pattern">Only Alphabets allowed(A-Z and a-z)</strong>
+        <strong *ngIf="lastname.errors?.minlength">Min length is 4 characters</strong>
+        <strong *ngIf="lastname.errors?.maxlength">Max length is 16 characters</strong>
+    </span>
+</div>
+
+
+<div class="form-group">
+  <label>Driver Age</label>
+  <input type="text" class="form-control" placeholder="Enter Driver Age" formControlName="driverage"
+      [ngClass]="{'is-invalid':driverage.errors && (driverage.touched||driverage.dirty),'is-valid':driverage.valid}">
+ 
+  <span class="invalid-feedback">
+      <strong *ngIf="driverage.errors?.required">Age is Required</strong>
+      <strong *ngIf="driverage.errors?.pattern">Pattern does not match</strong>
+     </span>
+</div>
+
+
+<div class="form-group">
+  <label>Adhaar Number</label>
+  <input type="text" class="form-control" placeholder="Enter the 12 digit aadhar number" formControlName="adhaarno"
+      [ngClass]="{'is-invalid':adhaarno.errors && (adhaarno.touched||adhaarno.dirty),'is-valid':adhaarno.valid}">
+  
+  <span class="invalid-feedback">
+      <strong *ngIf="adhaarno.errors?.required">12 Digit is Required</strong>
+      <strong *ngIf="adhaarno.errors?.pattern">Pattern does not match</strong>
+     </span>
+</div>
+
+
+
+
+  <div class="form-group">
+      <label>User E-mail</label>
+      <input type="email" class="form-control" placeholder="Enter email" formControlName="useremail"
+          [ngClass]="{'is-invalid':useremail.errors && (useremail.touched||useremail.dirty),'is-valid':useremail.valid}">
+     
+      <span class="invalid-feedback">
+          <strong *ngIf="useremail.errors?.required">Email is Required</strong>
+          <strong *ngIf="useremail.errors?.pattern">Email is Required</strong>
+          
+      </span>
+  </div>
+
+
+  
+  <div class="form-group">
+      <label>Mobile</label>
+      <input type="text" class="form-control" placeholder="Enter Mobile" formControlName="mobile"
+          [ngClass]="{'is-invalid':mobile.errors && (mobile.touched||mobile.dirty),'is-valid':mobile.valid}">
+    
+      <span class="invalid-feedback">
+          <strong *ngIf="mobile.errors?.required">Mobile number is Required</strong>
+      </span>
+  </div>
+
+  
+  <br>
+  <button type="submit" class="btn btn-primary" (click)="onSubmit()">
+    <a href="http://localhost:4200/cart" style="color: black;">SUBMIT</a>
+  </button>
+</form>
+<br>
+<br>
+
+
+
+<!--Validation Classes valid invlaid touch/un dirty/pristine-->
+
+<div class="form-group">
+  <div class="alert alert-info">
+      <p>Valid: <b>{{firstname.valid}}</b></p>
+      <p>InValid: <b>{{firstname.invalid}}</b></p>
+      <p>Touched: <b>{{firstname.touched}}</b></p>
+      <p>Untouched: <b>{{firstname.untouched}}</b></p>
+      <p>Dirty: <b>{{firstname.dirty}}</b></p>
+      <p>Pristine: <b>{{firstname.pristine}}</b></p>
+  </div>
+</div>
+<br>
+<br>
+
+
+
+
+<!--Retrieve data from form using the json pipe-->
+<div>
+    <h3>Customer Details</h3>
+    <pre>{{myForm.value | json}}</pre>
+</div>
+

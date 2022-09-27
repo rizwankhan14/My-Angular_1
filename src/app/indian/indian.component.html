@@ -1,0 +1,99 @@
+<marquee><h1>Indian Brands Cars</h1></marquee>
+<br>
+<!--fetch all the records from  property in the .ts file which is accessing the indian.json-->
+<div *ngFor="let c of car" style="border:none;">
+    <div class="row">
+
+
+        <!--1st column-->
+        <div class="col col-lg-3">
+            <!--Property Binding-->
+            <img [src]="c.img" class="prodimg">
+        </div>
+
+
+        <!--2nd column-->
+        <div class="card col-lg-6" style="border:none;">
+            <div class="card-body col-lg-12">
+                <div class="row" style="margin-top:10px;border-style:solid;border-color:black;border-radius:15px;">
+                    <div class="col-lg-3">
+
+
+
+                        <!--Property Binding-->
+                        <img [src]="c.img">
+                    </div>
+                    <div class="col-lg-9" style="margin-top:20px;">
+
+
+                        <!--Interpolation Binding-->
+                        <div>
+                            Brand: {{c.pname | uppercase}}
+                            
+                            <span (click)="showproductDetailsToggle()" [ngClass]="toggleContent()"></span>
+                        </div>
+                        <hr>
+                        <div [hidden]="productDetail">
+                            <h6>Specification</h6>
+                            Model:{{c.pmodel}}
+                            <br>
+                            Mileage: {{c.pmilage}}
+                            <br>
+                            Colors: {{c.pcolor}}
+                            <br>
+                            Cost: {{c.price | currency:'INR'}}<p>Lakh<p>
+                            
+                            
+                            
+                              <ul *ngFor="let pdetails of ProductDetails" [ngSwitch]="pdetails.color">
+                              <h4>  <li *ngSwitchCase="'green'" class="green">
+                                 {{c.pstatus}}
+                                 <li *ngSwitchCase="'red'" class="red">
+                                  {{c.cstatus}}
+                                  <li *ngSwitchDefault class="yellow">
+                                    {{c.dstatus}} 
+                                  </li>
+                                </h4>
+                                
+                              
+                              </ul>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       <br>
+       <br>
+       
+       <!--Access the ProductDetails *ngFor and *ngSwitchCase-->
+<!--red,green,yellow classes are created in the component.css-->
+
+
+<!--<ul *ngFor="let pdetails of ProductDetails" [ngSwitch]="pdetails.color">
+  <li *ngSwitchCase="'green'" class="green">
+    {{pdetails.pid}} - {{pdetails.pname}} - {{pdetails.status}}
+  </li>
+  <li *ngSwitchCase="'red'" class="red">
+    {{pdetails.pid}} - {{pdetails.pname}} - {{pdetails.status}}
+  </li>
+  <li *ngSwitchDefault class="yellow">
+    {{pdetails.pid}} - {{pdetails.pname}} - {{pdetails.status}}
+  </li>
+ </ul> -->
+
+
+
+
+
+        <!--3rd column-->
+        <div class="col col-lg-3">
+            <!--Property Binding-->
+            <img [src]="c.img" class="prodimg">
+        </div>
+    </div>
+</div>
+
+
+<app-footer></app-footer>

@@ -1,0 +1,9 @@
+<div class="child">
+  <h2> Any Queries or Suggestions</h2>
+  <p>  Add your Valid Reason....... <strong>{{beverage}}</strong></p>
+  <label for="beverage-input"> Any Suggestions :</label>
+  <input type="text" id="beverage-input" #newBeverage>
+  <button (click)="addNewBeverage(newBeverage.value);newBeverage.value= ' '">add</button>
+  
+  </div>
+  

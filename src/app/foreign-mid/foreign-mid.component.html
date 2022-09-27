@@ -1,0 +1,33 @@
+<!--fetch all the records from fridge property in the .ts file which is accessing the refrigerator.json-->
+<div *ngFor="let f of foreign" style="border:none;">
+    <div class="row">
+        <!--1nd column-->
+            <div class="card-body col-lg-12">
+                <div class="row" style="margin-top:10px;border-style:solid;border-color:black;border-radius:15px;">
+                    <div class="col-lg-3">
+                        <!--Property Binding-->
+                        <img [src]="f.img">
+                    </div>
+                    <div class="col-lg-9" style="margin-top:20px;">
+                        <!--Interpolation Binding-->
+                        <div>
+                            Product: {{f.pname | uppercase}}
+                            <span (click)="showproductDetailsToggle()" [ngClass]="toggleContent()"></span>
+                        </div>
+                        <hr>
+                        <div [hidden]="productDetail">
+                            <h6>Specification</h6>
+                            Model:{{f.pmodel}}
+                            <br>
+                            Top Speed: {{f.pspeed}}
+                            <br>
+                            Colors: {{f.pcolor}}
+                            <br>
+                            Cost: {{f.price | currency:'INR'}}<p>Crore</p>
+                            <app-counter></app-counter>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>

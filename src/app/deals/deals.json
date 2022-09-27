@@ -1,0 +1,60 @@
+[
+    {
+        "pid":1,
+        "pname":"Maruti Suzuki",
+        "pdescription":"XL6 Zeta",
+        "price":7500000,
+        "img":"https://ackodrive-assets.s3.amazonaws.com/media/test_mIvytuW.png"
+    },
+    {
+        "pid":2,
+        "pname":"Kia",
+        "pdescription":"Seltos 1.5 HTE",
+        "price":1000000,
+        "img":"https://ackodrive-assets.s3.amazonaws.com/media/test_Jo9HxF8.png"
+    },
+    {
+        "pid":3,
+        "pname":"Hyundai",
+        "pdescription":"Bs 6",
+        "price":45000000,
+        "img":"https://ackodrive-assets.s3.amazonaws.com/media/test_MVWZ7fr.jpeg"
+    },
+    {
+        "pid":4,
+        "pname":"Honda",
+        "pdescription":"City 1.5 V Petrol",
+        "price":3500000,
+        "img":"https://ackodrive-assets.s3.amazonaws.com/media/test_flJEwgj.png"
+    },
+    {
+        "pid":5,
+        "pname":"Porsche",
+        "pdescription":"Cayenne",
+        "price":45000000,
+        "img":"https://imgd.aeplcdn.com/664x374/cw/ec/32951/Porsche-Cayenne-Exterior-138359.jpg?wm=0&q=75"
+    },
+    {
+        "pid":6,
+        "pname":"Mercedes-Benz",
+        "pdescription":"Maybach S-Class",
+        "price":35000000,
+        "img":"https://imgd.aeplcdn.com/1056x594/n/cw/ec/115149/maybach-s-class-exterior-right-front-three-quarter.jpeg?isig=0&q=75&wm=1"
+    },
+    {
+        "pid":7,
+        "pname":"BMW",
+        "pdescription":"i4 ",
+        "price":10000000,
+        "img":"https://imgd.aeplcdn.com/1056x594/n/cw/ec/109123/i4-exterior-right-front-three-quarter.jpeg?isig=0&q=75&wm=1"
+    },
+    {
+        "pid":8,
+        "pname":"Ferrari",
+        "pdescription":"F8 Tributo",
+        "price":18990000,
+        "img":"https://imgd.aeplcdn.com/664x374/n/cw/ec/49376/f8-tributo-exterior-right-front-three-quarter-11.jpeg?q=75"
+    }
+    
+
+]

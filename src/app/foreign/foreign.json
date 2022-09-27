@@ -1,0 +1,48 @@
+[
+    {
+        "pid":1,
+        "pname":"Porsche",
+        "pmodel":"Cayenne",
+        "pspeed":"245 to 286 kmph",
+        "pcolor":"Blue, Black",
+        "price":1.26,
+        "img":"https://imgd.aeplcdn.com/664x374/cw/ec/32951/Porsche-Cayenne-Exterior-138359.jpg?wm=0&q=75"
+    },
+
+    
+
+    {
+        "pid":2,
+        "pname":"Mercedes-Benz",
+        "pmodel":"Maybach S-Class",
+        "pspeed":"250 kmph",
+        "pcolor":"Black",
+        "price":2.5,
+        "img":"https://imgd.aeplcdn.com/1056x594/n/cw/ec/115149/maybach-s-class-exterior-right-front-three-quarter.jpeg?isig=0&q=75&wm=1"
+    },
+
+    {
+        "pid":3,
+        "pname":"BMW",
+        "pmodel":"i4",
+        "pspeed":"280 kmph",
+        "pcolor":"White, Black",
+        "price":2.8,
+        "img":"https://imgd.aeplcdn.com/1056x594/n/cw/ec/109123/i4-exterior-right-front-three-quarter.jpeg?isig=0&q=75&wm=1"
+        
+    },
+
+    {
+        "pid":4,
+        "pname":"Ferrari",
+        "pmodel":"F8 Tributo",
+        "pspeed":"340 kmph",
+        "pcolor":"Royal Blue",
+        "price":4.02,
+        "img":"https://imgd.aeplcdn.com/664x374/n/cw/ec/49376/f8-tributo-exterior-right-front-three-quarter-11.jpeg?q=75"
+    }
+
+
+    
+
+]

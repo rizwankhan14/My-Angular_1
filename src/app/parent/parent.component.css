@@ -1,0 +1,16 @@
+.parent {
+    border: 5px solid  rgb(0, 0, 0);
+    margin: 20px;
+    padding: 20px;
+    background-color:rgb(236, 234, 115);
+}
+
+h2 {
+    text-align: center;
+    color:#000000;
+}
+
+li {
+
+    list-style: circle;
+}

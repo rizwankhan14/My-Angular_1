@@ -1,0 +1,109 @@
+<!--header-->
+
+<br>  
+<div class="m-4">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
+        <div class="container-fluid">
+
+
+          <a class="navbar-brand" href="#">
+            <img [src]="logo" alt="car"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+
+
+
+
+
+       
+            <a href="#" class="navbar-brand">Brand Cars</a>
+          
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse1">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse1">
+                <div class="navbar-nav">
+                  
+                    <a href="#" class="nav-item nav-link active" aria-current="page" routerLink="">Home</a>
+
+                    
+                    <li class="nav-item dropdown" *ngIf="auth">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Products
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item"  routerLink="indian">India Brands</a></li>
+                        
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" routerLink="foreign">Foreign Brands</a></li>
+                      </ul>
+                    </li>
+
+                   
+                   
+                    <a class="nav-item nav-link" routerLink="Cards" *ngIf="auth">Upcoming</a> <!--cards-->
+
+                <!--     <a class="nav-item nav-link" routerLink="booking"  *ngIf="auth">Register</a> Booking-->
+
+                    <a class="nav-item nav-link" routerLink="register"  *ngIf="!auth">Register</a>
+
+                    <a class="nav-item nav-link" routerLink="cart" *ngIf="auth">Checklist</a> <!--cart-->
+
+                    <a class="nav-item nav-link" routerLink="deals"  *ngIf="auth">Cart</a> <!--deals-->
+
+                  
+
+                    <a class="nav-item nav-link" routerLink="parent" *ngIf="auth">Query</a> <!--parent-->
+                   
+                
+                 
+                </div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              
+                
+                <form class="d-flex">
+
+             <!--      <input type="text" #productname placeholder="Enter Car Brand ">&nbsp;&nbsp;&nbsp;
+                    
+                  
+                   <button class="btn btn-outline-success" type="submit" (click)="search_product(productname.value);productname.value=''">Search</button>
+                
+                    
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                    <app-search [product]="productentered"></app-search>
+                  </form>
+                </div>
+              </div>
+            </nav>
+            <br>
+            <br>  --> 
+
+
+            <button routerLink='cartitem' style="height:5px;border:none;" *ngIf="auth">
+
+              <span class="fa fa-cart-plus" style="font-size:20px;color:rgb(255, 255, 255)"><sup class="text-warning" style="font-size:10px;margin-left: 3px;;">{{cartCount}}</sup></span>
+            </button> &nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="btn btn-outline-warning" type="submit" style="border-radius:10px;color:rgb(255, 255, 255);" routerLink="login"
+              *ngIf="auth">Logout</a>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <br>
+    <br>
+
+
+
+            
+             
+            
+          
