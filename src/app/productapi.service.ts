@@ -10,13 +10,13 @@ export class ProductapiService {
     constructor(private http:HttpClient) { }
 
   postProducts(data:any){
-    return this.http.post<any>("http://localhost:3000/posts/", data).pipe(map((res:any)=>{
+    return this.http.post<any>("http://localhost:3000/posts", data).pipe(map((res:any)=>{
       return res;
     }))
   }
 
   getProductDetails(){
-    return this.http.get<any>("http://localhost:3000/posts/").pipe(map((res:any)=>{
+    return this.http.get<any>("http://localhost:3000/posts").pipe(map((res:any)=>{
       return res;
     }))
   }
