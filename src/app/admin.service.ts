@@ -1,20 +1,20 @@
 import { Injectable } from "@angular/core";
 import { Subject } from "rxjs";
-//To access the userapi (i.e.) http://localhost:3000/users
+//To access the adminapi (i.e.) http://localhost:3000/users
 import { environment } from "src/environments/environment";
 
 @Injectable({
     providedIn: 'root'
   })
 
-export class UserService {
+export class AdminService {
     public authSubject = new Subject<boolean>();
   //Nav component to block access to other components
   validateAuth(data:boolean) {
     //passing the data as the next observable
     this.authSubject.next(data);
   }
-  //hosturl=environment.userapi;
+  //hosturl=environment.adminapi;
   
   value?:boolean;
     getAuthStatus(){

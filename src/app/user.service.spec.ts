@@ -1,7 +1,7 @@
-import { User.Service } from './user.service';
+import { UserService } from './user.service';
 
 describe('User.Service', () => {
   it('should create an instance', () => {
-    expect(new User.Service()).toBeTruthy();
+    expect(new UserService()).toBeTruthy();
   });
 });

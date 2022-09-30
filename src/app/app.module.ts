@@ -29,6 +29,7 @@ import { RegisterComponent } from './register/register.component';
 import { DealsComponent } from './deals/deals.component';
 import { CardealsComponent } from './cardeals/cardeals.component';
 import { ParentComponent } from './parent/parent.component';
+import { AdminComponent } from './admin/admin.component';
 
 
 
@@ -58,7 +59,8 @@ import { ParentComponent } from './parent/parent.component';
     RegisterComponent,
     DealsComponent,
     CardealsComponent,
-    ParentComponent
+    ParentComponent,
+    AdminComponent
   
     
    

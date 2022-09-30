@@ -12,6 +12,7 @@ import { CartItemsComponent } from './cart-items/cart-items.component';
 import { RegisterComponent } from './register/register.component';
 import { CardealsComponent } from './cardeals/cardeals.component';
 import { ParentComponent } from './parent/parent.component';
+import { AdminComponent } from './admin/admin.component';
 
 
 //Auth Guard for productdetails component
@@ -30,7 +31,8 @@ const routes: Routes = [
   {path:'cartitem',component:CartItemsComponent},
   {path:'register',component:RegisterComponent},
   {path:'deals',component:CardealsComponent},
-  {path:'parent',component:ParentComponent}
+  {path:'parent',component:ParentComponent},
+  {path:'admin',component:AdminComponent}
 ];
 
 @NgModule({
